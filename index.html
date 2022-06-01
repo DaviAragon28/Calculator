@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="calculator">
-        <div class="display">
-            <div class="input"></div>
-            <div class="output"></div>
-        </div>
-        <div class="touch">
-            <button class="clearAll">AC</button>
-            <button>(</button>
-            <button>)</button>
-            <button>+</button>
+      <div class="display">
+        <div class="input"></div>
+        <div class="output"></div>
+      </div>
+      <div class="touch">
+        <button class="clearAll">AC</button>
+        <button>(</button>
+        <button>)</button>
+        <button onclick="op('+')">+</button>
 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>-</button>
+        <button onclick="calcular('7')">7</button>
+        <button onclick="calcular('8')">8</button>
+        <button onclick="calcular('9')">9</button>
+        <button onclick="op('-')">-</button>
 
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
+        <button onclick="calcular('4')">4</button>
+        <button onclick="calcular('5')">5</button>
+        <button onclick="calcular('6')">6</button>
+        <button onclick="op('*')">*</button>
 
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>/</button>
+        <button onclick="calcular('1')">1</button>
+        <button onclick="calcular('2')">2</button>
+        <button onclick="calcular('3')">3</button>
+        <button onclick="op('/')">/</button>
 
-            <button class="delete">DEL</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="plus">=</button>
-        </div>
+        <button class="delete">DEL</button>
+        <button onclick="calcular('0')">0</button>
+        <button>.</button>
+        <button class="plus" onclick="resultadoNum()">=</button>
+      </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/15b0387e0a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/15b0387e0a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
-</body>
+    <script src="operaciones.js"></script>
+  </body>
 </html>
